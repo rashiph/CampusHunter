@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  college_id: 1
+  header_id: 1
+  created_by: MyString
+  updated_by: MyString
+
+two:
+  college_id: 1
+  header_id: 1
+  created_by: MyString
+  updated_by: MyString
