@@ -1,0 +1,3 @@
+before_script:
+  - psql -c "CREATE USER CampusHunter WITH PASSWORD '!abcd1234';" -U postgres
+  - rake db:migrate
