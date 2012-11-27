@@ -6,4 +6,3 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-pg_user.create([{usename: 'CampusHunter'}, {passwd: '!abcd1234'}])
