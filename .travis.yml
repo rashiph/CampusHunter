@@ -1,3 +1,3 @@
 before_script:
-  - psql -c 'create role "CampusHunter" login createdb;'
+  - psql -c 'createuser -s -r CampusHunter;'
   - rake db:migrate
