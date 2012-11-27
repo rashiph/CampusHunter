@@ -1,3 +1,3 @@
 before_script:
-  - psql -c 'createuser -s -r CampusHunter;'
+  - psql -c 'create database CampusHunter_development;' -U CampusHunter
   - rake db:migrate
