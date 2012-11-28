@@ -19,4 +19,17 @@ db/schema.rb
 .idea/workspace.xml
 
 .idea/.rakeTasks
+.idea
+tmp
+.idea/**/*.iml
+.idea/**/*.xml
+tmp/.idea/
+log/
+*.sqlite3
+.DS_Store
+.project
+.settings
+.settings/
+
+db/schema.rb
 

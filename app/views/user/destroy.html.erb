@@ -1,0 +1,61 @@
+<% content_for :title do %>
+    CampusHunter - Delete User
+<% end %>
+
+<% content_for :scripts do %>
+    <script type="text/javascript">
+
+        $(Document).ready(function () {
+            $('#Delete').click(function () {
+                if ($('.login-inp').val() == '') {
+                    $('#errorContainer').text('Please enter username.');
+                    return false;
+                }
+            });
+        });
+    </script>
+<% end %>
+
+<form action="/users/del" id="users" name="users" method="post" enctype="multipart/form-data">
+  <div id="login-holder">
+    <div id="logo-login">
+      <img style="width: 156px; height: 40px;" src="/assets/shared/logo.png" alt="Logo"/>
+    </div>
+    <div class="clear"></div>
+    <div id="loginbox">
+      <div id="login-inner">
+        <table style="width: 100%;">
+          <tr>
+            <td colspan="3">
+              <div id="errorContainer" style="text-decoration-color: maroon; padding-bottom: 20px; color: maroon;">
+                <%= @message %>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="username">Username</label>
+            </td>
+            <td></td>
+            <td>
+              <input type="text" name="username" id="username" class="login-inp" >
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3"><br/><br/></td>
+
+          </tr>
+          <tr style="text-align: center;">
+            <td colspan="3" style="text-align: center;">
+              <input type="submit" id="Delete" class="submit-login" value="Delete" style="float: left;">
+              &nbsp; &nbsp; &nbsp;
+              <a href="/college/show">
+                <input type="button" value="Cancel" class="submit-login" style="float: left; padding-top: 0px; ">
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</form>

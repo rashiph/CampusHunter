@@ -1,0 +1,48 @@
+<% content_for :title do %>
+    CampusHunter - Login
+<% end %>
+
+<%= form_tag :session, :action => "new" do %>
+    <div id="login-holder">
+      <div id="logo-login">
+        <%= image_tag "shared/logo.png", :size => "156*40",
+                      :alt => "CampusHunter" %>
+      </div>
+      <div class="clear"></div>
+      <div id="loginbox">
+
+        <div id="login-inner">
+          <div class="red-left" style="padding-bottom: 10px;">
+            <%= @message %>
+          </div>
+          <table border="0" cellpadding="0">
+            <tr>
+              <th>Username</th>
+              <td>
+                <%= text_field_tag :username, params[:username], :class => "login-inp" %>
+              </td>
+            </tr>
+            <tr>
+              <th>Password</th>
+              <td>
+                <%= password_field_tag :password, params[:password], :class => "login-inp" %>
+              </td>
+            </tr>
+            <tr>
+              <th></th>
+              <td valign="top"><br/></td>
+            </tr>
+            <tr>
+              <th></th>
+              <td>
+                <button type="submit" class="submit-login">Login</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+<% end %>
+
+
+

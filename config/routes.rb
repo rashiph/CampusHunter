@@ -1,4 +1,14 @@
 CampusHunter::Application.routes.draw do
+
+  root :to => "applicant#home"
+  resources :session
+  resources :user
+
+  get "log_in" => "session#new", :as => "log_in"
+  get "log_out" => "session#destroy", :as => "log_out"
+  get "sign_up" => "user#new", :as => "sign_up"
+  get "delete_user" => "user#destroy", :as => "delete_user"
+  post "user/del"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
