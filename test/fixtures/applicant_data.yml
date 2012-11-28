@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  college_header: 
+  applicant: 
+  value: MyString
+
+two:
+  college_header: 
+  applicant: 
+  value: MyString

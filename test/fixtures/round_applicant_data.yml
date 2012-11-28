@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  interviewee: MyString
+  applicants: 
+  round: 
+  status: false
+  comment: MyString
+
+two:
+  interviewee: MyString
+  applicants: 
+  round: 
+  status: false
+  comment: MyString

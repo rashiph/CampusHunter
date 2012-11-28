@@ -17,7 +17,7 @@ development:
   encoding: utf8
   database: CampusHunter_development
   pool: 5
-  username: postgres
+  username: CampusHunter
   password: !abcd1234
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -43,7 +43,7 @@ test:
   encoding: utf8
   database: CampusHunter_test
   pool: 5
-  username: postgres
+  username: CampusHunter
   password: !abcd1234
 
 production:
@@ -51,5 +51,5 @@ production:
   encoding: utf8
   database: CampusHunter_production
   pool: 5
-  username: postgres
+  username: CampusHunter
   password: !abcd1234
