@@ -1,9 +1,11 @@
 CampusHunter::Application.routes.draw do
 
-  root :to => "applicant#home"
-  resources :session
+  root :to => "session#new"
   resources :user
 
+  #resources :session
+  get "session/destroy"
+  get "session/new"
   get "log_in" => "session#new", :as => "log_in"
   get "log_out" => "session#destroy", :as => "log_out"
   get "sign_up" => "user#new", :as => "sign_up"
