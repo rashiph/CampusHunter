@@ -2,7 +2,7 @@ class UserController < ApplicationController
 
   #before_filter :require_login
 
-  layout "session"
+  #layout "session"
 
   def new
     @user = User.new

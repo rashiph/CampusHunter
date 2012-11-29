@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  attr_accessible :created_by, :password, :password_salt, :role, :updated_by, :username
+  attr_accessible :created_by, :password, :password_salt, :role, :updated_by, :username, :password_confirmation
 
   before_save :encrypt_password
 

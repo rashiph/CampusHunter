@@ -1,6 +1,6 @@
 class CreateCollege < ActiveRecord::Migration
   def change
-    create_table :college do |t|
+    create_table :colleges do |t|
       t.string :name
       t.integer :cutoff
       t.integer :number_of_applicants
