@@ -2,7 +2,7 @@
     CampusHunter - Login
 <% end %>
 
-<%= form_tag(:url => '/session/new', :method => :get)  do %>
+<%= form_tag(:url => '/session/create', :method => :post)  do %>
     <div id="login-holder">
       <div id="logo-login">
         <%= image_tag "shared/logo.png", :size => "156*40",
@@ -43,6 +43,3 @@
       </div>
     </div>
 <% end %>
-
-
-
