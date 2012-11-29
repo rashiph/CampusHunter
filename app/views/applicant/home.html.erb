@@ -2,7 +2,7 @@
     CampusHunter
 <% end %>
 
-
+<h1>HOME PAGE</h1>
 <% content_for :styles do %>
     <%= stylesheet_link_tag "pro_dropline_ie" %>
     <%= stylesheet_link_tag "pro_dropline" %>
@@ -15,6 +15,7 @@
 
     <h1>
       <%# link_to "List of Colleges", "/college/show", :id => "collegeList", :style => "color: #4b4b4b;" %>
+      <%= link_to "Upload CSV", "/applicant/upload", :id => "collegeList", :style => "color: #4b4b4b;" %>
     </h1>
     <br/>
 
