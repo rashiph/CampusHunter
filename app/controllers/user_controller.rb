@@ -1,6 +1,6 @@
 class UserController < ApplicationController
 
-  before_filter :require_login
+  #before_filter :require_login
   layout "session"
 
   def new

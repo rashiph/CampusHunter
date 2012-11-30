@@ -12,13 +12,23 @@ CampusHunter::Application.routes.draw do
   get "sign_up" => "user#new", :as => "sign_up"
   get "delete_user" => "user#destroy", :as => "delete_user"
   post "user/del"
+  post "applicant/create"
+
+  resources :college do
+    collection do
+      get "show"
+    end
+  end
 
   resources :applicant do
     collection do
     get "home"
+    get "upload"
+    post "upload"
+    post "create"
+    get "create"
     end
   end
-
   #post "session/new"
   # The priority is based upon order of creation:
   # first created -> highest priority.

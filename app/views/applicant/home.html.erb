@@ -12,16 +12,15 @@
 
   <div style="float: left;">
     <br/>
-
     <h1>
-      <%# link_to "List of Colleges", "/college/show", :id => "collegeList", :style => "color: #4b4b4b;" %>
-      <%= link_to "Upload CSV", "/applicant/upload", :id => "collegeList", :style => "color: #4b4b4b;" %>
+      <%= link_to "List of Colleges", "/college/show", :id => "collegeList", :style => "color: #4b4b4b;" %>
     </h1>
     <br/>
-
     <h1>
-      <%# link_to "List of Pools", "/pool/show", :id => "poolList", :style => "color: #4b4b4b;" %>
+      <%= link_to "List of Pools", "/pool/show", :id => "poolList", :style => "color: #4b4b4b;" %>
     </h1>
-    <br/><br/>
+    <br/><h1>
+    <%= link_to "Add College", "/applicant/upload", :id => "poolList", :style => "color: #4b4b4b;" %>
+  </h1><br/>
   </div>
 </div>

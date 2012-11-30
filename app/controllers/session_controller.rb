@@ -1,5 +1,6 @@
 class SessionController < ApplicationController
   def new
+    @message = "WELCOME"
   end
 
   def create
@@ -8,6 +9,8 @@ class SessionController < ApplicationController
       session[:user_id] = user.id
       redirect_to root_path
     else
+      #require "pry"
+      #binding.pry
       @message = "Invalid email or password"
       render 'new'
     end
